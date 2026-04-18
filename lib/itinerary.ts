@@ -22,18 +22,18 @@ export interface Day {
 
 export const TRIP_INFO = {
   title: 'Koppenhága — 5 napos terv',
-  subtitle: '4 felnőtt + 1 baba · Április 19–23 · Comwell Portside, Nordhavn',
+  subtitle: '4 felnőtt + 1 baba · Április 18–22 · Comwell Portside, Nordhavn',
   hotel: 'Comwell Portside, Alexandriagade 1, Nordhavn',
-  dates: 'April 19–23, 2026',
+  dates: 'April 18–22, 2026',
   group: '4 adults + 1 baby',
 };
 
 export const itinerary: Day[] = [
   {
     id: 0,
-    date: 'Április 19',
-    dayName: '1. nap — Szombat',
-    label: '1. nap · Április 19 · Érkezés + Nyhavn felfedezés',
+    date: 'Április 18',
+    dayName: '1. nap — Péntek',
+    label: '1. nap · Április 18 · Érkezés + Nyhavn felfedezés',
     activities: [
       {
         time: '13:15 — Landolás',
@@ -71,9 +71,9 @@ export const itinerary: Day[] = [
   },
   {
     id: 1,
-    date: 'Április 20',
-    dayName: '2. nap — Vasárnap',
-    label: '2. nap · Április 20 · Belváros + Nørrebro + Lille Bakery',
+    date: 'Április 19',
+    dayName: '2. nap — Szombat',
+    label: '2. nap · Április 19 · Belváros + Nørrebro + Lille Bakery',
     activities: [
       {
         time: '09:30 — Reggeli után',
@@ -128,9 +128,9 @@ export const itinerary: Day[] = [
   },
   {
     id: 2,
-    date: 'Április 21',
-    dayName: '3. nap — Hétfő',
-    label: '3. nap · Április 21 · Malmö — Svédország egy napra',
+    date: 'Április 20',
+    dayName: '3. nap — Vasárnap',
+    label: '3. nap · Április 20 · Malmö — Svédország egy napra',
     activities: [
       {
         time: '09:00 — Reggeli után',
@@ -184,9 +184,9 @@ export const itinerary: Day[] = [
   },
   {
     id: 3,
-    date: 'Április 22',
-    dayName: '4. nap — Kedd',
-    label: '4. nap · Április 22 · Tivoli + belváros + Nyhavn hajóút',
+    date: 'Április 21',
+    dayName: '4. nap — Hétfő',
+    label: '4. nap · Április 21 · Tivoli + belváros + Nyhavn hajóút',
     activities: [
       {
         time: '10:00 — Délelőtt',
@@ -236,9 +236,9 @@ export const itinerary: Day[] = [
   },
   {
     id: 4,
-    date: 'Április 23',
-    dayName: '5. nap — Szerda',
-    label: '5. nap · Április 23 · Nordhavn séta + indulás',
+    date: 'Április 22',
+    dayName: '5. nap — Kedd',
+    label: '5. nap · Április 22 · Nordhavn séta + indulás',
     activities: [
       {
         time: 'Reggeli után',

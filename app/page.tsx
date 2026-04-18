@@ -9,15 +9,15 @@ type Tab = 'chat' | 'plan';
 
 function getCurrentDayIndex(): number {
   const now = new Date();
-  // Trip is April 19-23 2026, Copenhagen time (CEST = UTC+2)
+  // Trip is April 18-22 2026, Copenhagen time (CEST = UTC+2)
   const tripDates = [
+    new Date('2026-04-18T00:00:00+02:00'),
     new Date('2026-04-19T00:00:00+02:00'),
     new Date('2026-04-20T00:00:00+02:00'),
     new Date('2026-04-21T00:00:00+02:00'),
     new Date('2026-04-22T00:00:00+02:00'),
-    new Date('2026-04-23T00:00:00+02:00'),
   ];
-  const tripEnd = new Date('2026-04-23T23:59:59+02:00');
+  const tripEnd = new Date('2026-04-22T23:59:59+02:00');
   if (now > tripEnd) return 4;
   for (let i = tripDates.length - 1; i >= 0; i--) {
     if (now >= tripDates[i]) return i;

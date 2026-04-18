@@ -2,17 +2,9 @@ import OpenAI from 'openai';
 import { NextRequest } from 'next/server';
 import { buildSystemPrompt } from '@/lib/itinerary';
 
-const client = new OpenAI();
-
 export async function POST(req: NextRequest) {
+  const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
   const { messages, currentDayIndex } = await req.json();
-
-  if (!process.env.OPENAI_API_KEY) {
-    return new Response(
-      JSON.stringify({ error: 'OPENAI_API_KEY not configured' }),
-      { status: 500, headers: { 'Content-Type': 'application/json' } }
-    );
-  }
 
   const systemPrompt = buildSystemPrompt(currentDayIndex ?? 0);
 
